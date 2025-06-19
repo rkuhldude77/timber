@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+body, html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #424242;
+  height: 100%;
+  overflow-x: scroll;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: #ffffff;
+}
+
+.review-image{
+  margin: 8px;
+}
+
+.black-text{
+  color: #000000;
+}

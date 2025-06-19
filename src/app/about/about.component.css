@@ -1,0 +1,39 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-h1 {
+  font-size: 60px;
+}
+
+.about-p1 {
+  width: 55%;
+  font-size: x-large;
+  text-align: center;
+}
+
+.about-p2 {
+  margin-bottom: 30px;
+}
+
+.logo-spacer {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 800px){
+  .about-h1 {
+    font-size: 30px;
+  }
+
+  .about-p1 {
+    width: 55%;
+    font-size: large;
+    text-align: center;
+  }
+
+  .logo-phone-size {
+    height: 100px;
+    width: 100px;
+  }
+}

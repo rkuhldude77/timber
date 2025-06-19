@@ -1,0 +1,57 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;;
+}
+
+.home-h1 {
+  font-size: 60px;
+}
+
+.home-p1 {
+  width: 55%;
+  font-size: x-large;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+.home-container img {
+  width: 1200px;
+  height: 500px;
+}
+
+.home-bgspacer {
+  background-color: black;
+  width: 1200px;
+}
+
+/* .home-row {
+
+}
+
+.home-column {
+
+} */
+
+@media screen and (max-width: 800px){
+  .home-h1 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .home-p1 {
+    font-size: medium;
+    margin-top: 0;
+  }
+
+  .home-container img {
+    width: 400px;
+    height: 200px;
+  }
+  
+  .home-bgspacer {
+    background-color: black;
+    width: 400px;
+  }
+}

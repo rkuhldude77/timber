@@ -1,0 +1,63 @@
+<div class="services-container">
+  <div>
+    <h1 class="services-h1">Examples of Services We Offer</h1>
+  </div>
+</div>
+
+<!-- <div class="button-bar">
+  <button *ngFor="let set of imageSets; let i = index" (click)="selectSet(i)"
+  [class.active]="selectedSet === i">
+  {{ set.name }}
+  </button>
+</div> -->
+
+<div class="button-bar">
+  <button
+    *ngFor="let set of imageSets; let i = index"
+    (click)="selectSet(i)"
+    [class.active]="selectedSet === i"
+  >
+    {{ set.name }}
+  </button>
+</div>
+
+<div class="image-grid">
+  <ng-container *ngFor="let img of imageSets[selectedSet].images">
+    <!-- Check if this set is a video set -->
+    <div *ngIf="imageSets[selectedSet].name.toLowerCase().includes('videos')">
+      <h1 class="services-youtube">Check out our videos on YouTube</h1>
+      <a
+        href="https://www.facebook.com/people/Timber-Elite-Construction-LLC/61555604283441/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img class="image-card-youtube" [src]="img" alt="Video Thumbnail" />
+      </a>
+    </div>
+
+    <img
+      class="image-card"
+      *ngIf="!imageSets[selectedSet].name.toLowerCase().includes('videos')"
+      [src]="img"
+      alt="Image"
+      width="400px"
+      height="400px"
+      (click)="openFullImage(img)"
+    />
+  </ng-container>
+</div>
+
+<!-- <div class="image-grid image-card">
+  <img
+  *ngFor="let img of imageSets[selectedSet].images"
+   [src]="img" 
+   alt="Image" 
+   height="400px" 
+   width="400px" 
+   (click)="openFullImage(img)"
+   />
+</div> -->
+
+<div class="modal" *ngIf="selectedImage" (click)="closeFullImage()">
+  <img [src]="selectedImage" class="full-image" />
+</div>

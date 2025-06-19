@@ -1,0 +1,39 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-h1 {
+  font-size: 60px;
+}
+
+.contact-p1 {
+  width: 55%;
+  font-size: x-large;
+  text-align: center;
+}
+
+.contact-p2 {
+  margin-bottom: 30px;
+}
+
+.logo-spacer {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 800px){
+  .contact-h1 {
+    font-size: 30px;
+  }
+
+  .contact-p1 {
+    width: 55%;
+    font-size: large;
+    text-align: center;
+  }
+
+  .logo-phone-size {
+    height: 100px;
+    width: 100px;
+  }
+}
